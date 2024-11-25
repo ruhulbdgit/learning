@@ -4,7 +4,9 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <title><?php bloginfo('name'); ?></title>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?> ./css/custom.css">
+
     <?php wp_head(); ?>
 </head>
 
