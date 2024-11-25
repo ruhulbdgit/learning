@@ -12,6 +12,7 @@
     <header>
         <h1><?php bloginfo('name'); ?></h1>
         <p><?php bloginfo('description'); ?></p>
+        <?php wp_nav_menu(array('theme_location' => 'my-theme', 'menu_id' => 'nav')); ?>
     </header>
     <main>
         <?php
