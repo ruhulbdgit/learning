@@ -8,11 +8,16 @@ function my_theme_setup()
     //Allow users to set custom header images and background colors or images.
     add_theme_support('custom-header');
     add_theme_support('custom-background');
+    //
+    //Test wp style 
+
+    wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/custom-style.css');
+
 
     // Enque style & js
     function my_theme_scripts()
     {
-        wp_enqueue_style('main-styles', get_stylesheet_uri());
+        wp_enqueue_style('style', get_stylesheet_uri());
         wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery'), null, true);
     }
     add_action('wp_enqueue_scripts', 'my_theme_scripts');
