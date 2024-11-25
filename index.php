@@ -1,3 +1,4 @@
+<button onclick="myFunction()">Try it</button>
 <?php get_header(); ?>
 <main>
     <?php
