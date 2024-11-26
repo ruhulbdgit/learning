@@ -15,6 +15,8 @@
         echo '<p>No content found</p>';
     endif;
     ?>
+    <?php get_sidebar(); ?>
 </main>
+
 
 <?php get_footer(); ?>
